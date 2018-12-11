@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Todos Rest
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list inset>
+    <ion-item *ngFor="let todo of todos">
+      <h2>{{todo.title}}</h2>
+      <p>{{todo.completed}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

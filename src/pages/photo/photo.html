@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Photos Rest
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="photos">
+  <ion-list inset class="photo-item">
+    <ion-item *ngFor="let photo of photos">
+    <p><img width="150" heigth="150" src="{{photo.url}}"></p>
+    </ion-item>
+  </ion-list>
+</ion-content>
