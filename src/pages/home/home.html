@@ -1,14 +1,21 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Aplicação N2 Rest
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+  <button ion-button block icon-only [navPush]="userPage">
+    <ion-icon name="people"></ion-icon> Users
+  </button>
+
+  <button ion-button block icon-only [navPush]="todoPage">
+    <ion-icon ios="ios-checkbox" md="md-checkbox"></ion-icon> Todos
+  </button>
+
+  <button ion-button block icon-only [navPush]="photoPage">
+    <ion-icon name="image"></ion-icon> Photos
+  </button>
 </ion-content>
